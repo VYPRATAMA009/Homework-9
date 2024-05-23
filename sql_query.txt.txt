@@ -1,0 +1,7 @@
+CREATE SEQUENCE users_id;
+ALTER SEQUENCE users_id RESTART WITH 101;
+ALTER TABLE users ALTER COLUMN id SET DEFAULT nextval('users_id');
+
+CREATE SEQUENCE movies_id;
+ALTER SEQUENCE movies_id RESTART WITH 1001;
+ALTER TABLE movies ALTER COLUMN id SET DEFAULT nextval('movies_id');
