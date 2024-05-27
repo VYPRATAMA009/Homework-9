@@ -1,5 +1,5 @@
 import express from 'express';
-import Movies from '../controllers/movies.controllers.js';
+import Movies from '../controllers/movies_controllers.js';
 import auth from '../middlewares/authenticaton.js';
 
 const moviesRoutes = express.Router();
